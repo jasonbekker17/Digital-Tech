@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home1"
+    android:padding="20dp"
+    tools:context=".Incident">
+
+
+    <TextView
+        android:id="@+id/tvheading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please fill the form below to report the incident"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+
+        />
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        android:layout_below="@id/tvheading" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round2"
+        android:layout_below="@+id/view1"
+
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/white"
+        android:hint="Email Address"
+        android:padding="20dp"
+        android:textColor="@color/black"></EditText>
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round2"
+        android:layout_below="@id/email"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/white"
+        android:hint="phone number"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:inputType="number"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+
+        android:background="@drawable/round2"
+        android:backgroundTint="@color/white"
+        android:hint="Gender"
+        android:padding="20dp"
+        android:textColor="@color/black"></EditText>
+
+
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round2"
+        android:backgroundTint="@color/white"
+        android:hint="First Name"
+        android:padding="20dp"
+        android:textColor="@color/black"></EditText>
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstname"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round2"
+        android:backgroundTint="@color/white"
+        android:hint="First Name"
+        android:padding="20dp"
+        android:textColor="@color/black"></EditText>
+    <EditText
+        android:id="@+id/incident"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastname"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round2"
+        android:backgroundTint="@color/white"
+        android:hint="Incident"
+        android:padding="20dp"
+        android:textColor="@color/black"></EditText>
+
+
+    <TextView
+        android:id="@+id/btnsubmit"
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/incident"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</RelativeLayout>
